@@ -34,13 +34,13 @@
                 <img src="./img/coexstar_logo.png" width="300" />
                 <h1>Registration Form</h1>
             </div>
-            <form id="rsvpForm" class="fs-form fs-form-full" autocomplete="off">
+            <form id="rsvpForm" class="fs-form fs-form-full" autocomplete="off" onsubmit="event.preventDefault();">
                 <ol class="fs-fields">
                     <li>
                         <label class="fs-field-label fs-anim-upper" for="q1">Full Name</label>
                         <input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="John Doe" required />
                     </li>
-                    <li>
+                    <!-- <li>
                         <label class="fs-field-label fs-anim-upper" for="q2"
                             data-info="We won't send you spam, we promise...">Email Address</label>
                         <input class="fs-anim-lower" id="q2" name="q2" type="email" placeholder="johndoe@coex.ph"
@@ -89,7 +89,7 @@
                         <label class="fs-field-label fs-anim-upper" for="q7"> I have read and agree to the</label><a
                             class="privacy_link" href="privacy.php" target="_blank">Privacy
                             Policy</a>
-                    </li>
+                    </li> -->
                 </ol>
                 <!-- /fs-fields -->
                 <button class="fs-submit" onclick="save()" type="submit">Send answers</button>

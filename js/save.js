@@ -6,18 +6,16 @@ function save() {
   const address = document.getElementById("q5").value;
   const isAttending = document.getElementById("q6").value;
   // Returns successful data submission message when the entered information is stored in database.
-  const formData = {
-    name: name,
-  };
-
-  $.ajax({
-    type: "POST",
-    url: "save.php",
-    data: formData,
-    cache: false,
-    success: function (res) {
-      console.log(res);
-    },
-  });
+  console.log(name);
+  const formData = {};
+  // $.ajax({
+  //   type: "POST",
+  //   url: "save.php",
+  //   data: formData,
+  //   cache: false,
+  //   success: function (res) {
+  //     console.log(res);
+  //   },
+  // });
   // return false;
 }
