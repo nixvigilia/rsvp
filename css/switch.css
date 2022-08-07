@@ -1,0 +1,51 @@
+input.switch {
+  display: inline-block;
+  cursor: pointer;
+  height: 20px;
+  width: 50px;
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+input.switch:checked::before {
+  background: #9cb76e;
+}
+input.switch::before {
+  font-size: 18px;
+  color: #fff;
+  box-shadow: 0 0 1px 1px #ffffff;
+  content: "✓  ✖";
+  display: block;
+  position: absolute;
+  background: #b9babb;
+  width: 50px;
+  border-radius: 1px;
+  height: 25px;
+  top: -5px;
+  left: 0px;
+  text-align: center;
+}
+input.switch::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fff;
+  border-radius: 2px;
+  height: 21px;
+  width: 22px;
+  top: -3px;
+  left: 1px;
+  box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
+  transition: all 300ms;
+}
+input.switch:active::after {
+  width: 30px;
+}
+input.switch:checked::after {
+  left: auto;
+  right: 2px;
+}
+input.round.switch::after,
+input.round.switch::before {
+  border-radius: 20px;
+}
